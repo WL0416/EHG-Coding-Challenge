@@ -8,6 +8,10 @@ The program will break each component into 32 steps -- 8, 16, 24 , .. 256 -- whi
 
 ## Usage
 
+1. git clone https://github.com/WL0416/EHG-Coding-Challenge.git
+2. npm install
+3. npm start
+
 Simply change the width or height dimension to generate the image filled with discrete colours.
 
 ## Screenshots
