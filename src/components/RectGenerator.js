@@ -17,6 +17,7 @@ const RectGenerator = () => {
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     const imageData = ctx.createImageData(width, height);
 
     // Iterate through every pixel
@@ -28,17 +29,18 @@ const RectGenerator = () => {
       imageData.data[i + 3] = ALPHA; // A value
 
       /* 
-         Using n-ary tree data structure store colors and find unique path which represents the unique color in RGB mode 
-         through the tree, blue color is the leaf layer, when the leaves count to 256, trace back to the parent node layer 
-         which is green and create a new green node, when the green nodes count to 256, trace back to the parent node layer 
-         which is red, this algorithm can cover 16,777,216 colors and render image from random start color with efficient
-         calculations according to the image size.  
+      Using n-ary tree data structure to store (logically) colors and find unique path which represents the unique color 
+      in RGB mode throughout the tree, blue color is the leaf layer, when the leaves count to 256, trace back to the 
+      parent node layer which is green and create a new green node, when the green nodes count to 256, trace back to the 
+      parent node layer which is red, this algorithm can cover 16,777,216 colors and render image from random start color 
+      with efficient calculations according to the image size.  
       */
       blue.current = colorCalculator(blue.current);
-      if ((i / 4) % 256 === 0) {
+      const realIndex = i / 4;
+      if (realIndex % 256 === 0) {
         green.current = colorCalculator(green.current);
       }
-      if ((i / 4) % Math.pow(256, 2) === 0) {
+      if (realIndex % Math.pow(256, 2) === 0) {
         red.current = colorCalculator(red.current);
       }
     }
