@@ -11,3 +11,8 @@ The program will break each component into 32 steps -- 8, 16, 24 , .. 256 -- whi
 Simply change the width or height dimension to generate the image filled with discrete colours.
 
 ## Screenshots
+
+![Screenshot One](https://github.com/WL0416/EHG-Coding-Challenge/blob/main/screenshots/ss1.png)
+![Screenshot Two](https://github.com/WL0416/EHG-Coding-Challenge/blob/main/screenshots/ss2.png)
+![Screenshot Three](https://github.com/WL0416/EHG-Coding-Challenge/blob/main/screenshots/ss3.png)
+![Screenshot Four](https://github.com/WL0416/EHG-Coding-Challenge/blob/main/screenshots/ss4.png)
