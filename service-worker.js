@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/EHG-Coding-Challenge/precache-manifest.aa2f8ac00487b277cbb88a9ceef5f11b.js"
+  "/EHG-Coding-Challenge/precache-manifest.5482b183e7122a657d841377ee431c4d.js"
 );
 
 self.addEventListener('message', (event) => {
