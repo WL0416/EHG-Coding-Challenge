@@ -36,12 +36,17 @@ const RectGenerator = () => {
       with efficient calculations according to the image size.  
       */
       blue.current = colorCalculator(blue.current);
-      const realIndex = i / 4;
-      if (realIndex % 256 === 0) {
-        green.current = colorCalculator(green.current);
-      }
-      if (realIndex % Math.pow(256, 2) === 0) {
-        red.current = colorCalculator(red.current);
+
+      if (i !== 0) {
+        const realIndex = i / 4;
+        if (realIndex % 256 === 0) {
+          green.current = colorCalculator(green.current);
+          imageData.data[i + 1] = green.current;
+        }
+        if (realIndex % Math.pow(256, 2) === 0) {
+          red.current = colorCalculator(red.current);
+          imageData.data[i + 0] = red.current;
+        }
       }
     }
 
