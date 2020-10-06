@@ -21,7 +21,7 @@ export const rgbInit = () => {
 export const colorCalculator = (color) => {
   let nextColor = color + 1;
   if (nextColor >= 256) {
-    nextColor = nextColor % 256;
+    nextColor = 0;
   }
   return nextColor;
 };
