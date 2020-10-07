@@ -18,7 +18,6 @@ Simply change the width or height dimension to generate the image filled with di
 ## Screenshots
 
 ![Screenshot One](https://github.com/WL0416/EHG-Coding-Challenge/blob/main/screenshots/ss1.png)
-![Screenshot Two](https://github.com/WL0416/EHG-Coding-Challenge/blob/main/screenshots/ss2.png)
 
 ## Demo
 
